@@ -33,7 +33,7 @@ signInWithEmailAndPassword(auth, email, password)
   // Signed in 
   const user = userCredential.user;
   console.log(user);
-  alert(user.email+" Login successfully!!!");
+  alert("Login successfully!!!");
   localStorage.setItem("UserName", email);
    
 setTimeout(()=>{
