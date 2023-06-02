@@ -1,0 +1,190 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+    <title>Deep Land Solution</title>
+    <link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="fonts/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="manifest" href="_manifest.json">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <meta id="theme-check" name="theme-color" content="#FFFFFF">
+    <link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+
+<body class="theme-light">
+<div id="HomePage">
+
+    <div id="preloader">
+        <div class="spinner-border color-highlight" role="status"></div>
+    </div>
+    <div id="page">
+
+        <div class="header-bar header-fixed header-app header-bar-detached">
+            <a data-bs-toggle="offcanvas" data-bs-target="#menu-main" href="#"><i class="bi bi-list color-theme"></i></a>
+            <a href="#" class="header-title color-theme">Menu</a>
+            <a href="#" data-bs-toggle="offcanvas" data-bs-target="#menu-bell"><em class="badge bg-highlight ms-1">2</em><i class="font-14 bi bi-bell-fill"></i></a>
+            <a href="#" class="show-on-theme-light" data-toggle-theme ><i class="bi bi-moon-fill font-13"></i></a>
+            <a href="#" class="show-on-theme-dark" data-toggle-theme ><i class="bi bi-lightbulb-fill color-yellow-dark font-13"></i></a>
+        </div>
+
+        <div id="footer-bar" class="footer-bar footer-bar footer-bar-detached">
+            <a href="Pages.html"  ><i class="bi bi-heart-fill font-15"></i><span>Pages</span></a>
+            <a href="Price.html" ><i class="bi bi-star-fill font-17"></i><span>Price</span></a>
+            <a href="Home.html" class="active-nav"><i class="bi bi-house-fill font-16 "></i><span>Home</span></a>
+            <a href="Survey.html"  ><i class="bi bi-book-half font-16"></i><span>Survey</span></a>
+            <a href="#" data-bs-toggle="offcanvas" data-bs-target="#menu-main"><i class="bi bi-list"></i><span>Menu</span></a>
+          </div>
+        
+
+        <div id="menu-main" data-menu-active="nav-homes" data-menu-load="menu-main.html" style="width:280px;" class="offcanvas offcanvas-start offcanvas-detached rounded-m">
+        </div>
+        
+        <div id="menu-bell" data-menu-load="menu-bell.html" style="height:340px" class="offcanvas offcanvas-top offcanvas-detached rounded-m">
+        </div> 
+
+        <div class="page-content header-clear-medium">
+            <div class="splide single-slider slider-no-dots slider-no-arrows slider-boxed text-center mt-n2" id="single-slider-3">
+                <div class="splide__track">
+                    <div class="splide__list">
+                        <div class="splide__slide">
+                            <div class="card card-style mx-0 shadow-card shadow-card-m bg-14" data-card-height="230"
+                            style="
+                              background-image: url('Home.png');
+                              background-position: center;
+                              background-size: 100%;
+                              background-repeat: no-repeat;
+                              border-radius: 10px;
+                              background-color: blue;
+                            "
+                            >
+                                <div class="card-bottom pb-3 px-3">
+                                    <h3 class="color-white mb-1">Welcome To</h3>
+                                    <p class="color-white opacity-80 mb-0 mt-n1 font-14">Deep Land Solution</p>
+                                </div>
+                                <div class="card-overlay bg-gradient-fade"></div>
+                            </div>
+                        </div>
+                        <div class="splide__slide">
+                            <div class="card card-style mx-0 shadow-card shadow-card-m bg-2" data-card-height="230" 
+                            style="
+                            background-image: url('Home.png');
+                            background-position: center;
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                            background-color: red;
+                          "
+                            >                           
+                                <div class="card-bottom pb-3 px-3">
+                                    <h3 class="color-white mb-1">Working</h3>
+                                    <p class="color-white opacity-80 mb-0 mt-n1 font-14">Trusteble Works</p>
+                                </div>
+                                <div class="card-overlay bg-gradient-fade"></div>
+                            </div>
+                        </div>
+                        <div class="splide__slide">
+                            <div class="card card-style mx-0 shadow-card shadow-card-m bg-7" data-card-height="230"
+                            style="
+                            background-image: url('Home.png');
+                            background-position: center;
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                            background-color:green;
+                          "
+                            >
+                                <div class="card-bottom pb-3 px-3">
+                                    <h3 class="color-white mb-0">Unkown</h3>
+                                    <p class="color-white opacity-80 mb-0 mt-n1">Unkown</p>
+                                </div>
+                                <div class="card-overlay bg-gradient-fade"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card card-style">
+                <div class="card-body text-center">
+                    <h5 class="mb-n1 font-12 color-highlight font-700 text-uppercase pt-1">The Future is Now</h5>
+                    <h2>Powerful Features</h2>
+                    <p class="mb-3">
+                        Features & Skills
+                    </p>
+                    <div class="row mb-n3 pt-4">
+                        <div class="col-6">
+                            <i class="bi bi-lightning-charge color-yellow-dark font-50 d-block pb-2"></i>
+                            <h5 class="pt-2">Location</h5>
+                            <p>
+                                All Over Indias Surveys
+                            </p>
+                        </div>
+                        <div class="col-6">
+                            <i class="bi bi-award color-red-light font-50 d-block pb-2"></i>
+                            <h5 class="pt-2">Happy Client</h5>
+                            <p>
+                               10K+ Happy Client
+                            </p>
+                        </div>
+                        <div class="col-6">
+                            <i class="bi bi-phone color-gray-dark font-50 d-block pb-2"></i>
+                            <h5 class="pt-2">Mobile App</h5>
+                            <p>
+                                Install Mobile App and Request A New Survey
+                            </p>
+                        </div>
+                        <div class="col-6">
+                            <i class="bi bi-code-slash color-green-light font-50 d-block pb-2"></i>
+                            <h5 class="pt-2">Experienced Person</h5>
+                            <p>
+                                10 Year of Experience
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</div>
+</div>    
+    <script src="scripts/custom.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src="scripts/RemoveWatermark.js"></script>
+    <script src="scripts/_service-worker.js"></script>
+    <script type="module" src="scripts/login.js"></script>
+
+    <script type="module">
+
+let name = localStorage.getItem("UserName")
+
+// Check if the browser supports notifications
+if ('Notification' in window) {
+  // Request permission from the user
+  Notification.requestPermission()
+    .then(function(permission) {
+      if (permission === 'granted') {
+        // Create a new notification
+        var notification = new Notification('Welcome To DLS', {
+          body: name,
+          icon: 'images/avatars/2s.png' // optional icon path
+        });
+
+        // alert(notification.body)
+
+        // Handle click event if the user interacts with the notification
+        notification.onclick = function() {
+          console.log('Notification clicked!');
+        };
+      }
+    })
+    .catch(function(error) {
+      console.error('Error requesting permission:', error);
+    });
+} else {
+  console.log('Notifications not supported in this browser.');
+}
+
+        </script>
+
+</body>

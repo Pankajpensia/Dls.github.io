@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>Deep Land Solution</title>
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="fonts/bootstrap-icons.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="manifest" href="_manifest.json">
+<meta id="theme-check" name="theme-color" content="#FFFFFF">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png"></head>
+<body class="theme-light">
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+<div id="page">
+
+<div class="header-bar header-fixed header-app header-bar-detached">
+<a data-bs-toggle="offcanvas" data-bs-target="#menu-main" href="#"><i class="bi bi-list color-theme"></i></a>
+<a href="#" class="header-title color-theme">Menu</a>
+<a href="#" data-bs-toggle="offcanvas" data-bs-target="#menu-bell"><em class="badge bg-highlight ms-1">2</em><i class="font-14 bi bi-bell-fill"></i></a>
+<a href="#" class="show-on-theme-light" data-toggle-theme><i class="bi bi-moon-fill font-13"></i></a>
+<a href="#" class="show-on-theme-dark" data-toggle-theme><i class="bi bi-lightbulb-fill color-yellow-dark font-13"></i></a>
+</div>
+
+<div id="footer-bar" class="footer-bar footer-bar footer-bar-detached">
+    <a href="Pages.html" ><i class="bi bi-heart-fill font-15"></i><span>Pages</span></a>
+    <a href="Price.html"><i class="bi bi-star-fill font-17"></i><span>Price</span></a>
+    <a href="Home.html"><i class="bi bi-house-fill font-16 "></i><span>Home</span></a>
+    <a href="Survey.html" class="active-nav"><i class="bi bi-book-half font-16"></i><span>Survey</span></a>
+    <a href="#" data-bs-toggle="offcanvas" data-bs-target="#menu-main"><i class="bi bi-list"></i><span>Menu</span></a>
+  </div>
+
+<div id="menu-main" data-menu-active="nav-homes" data-menu-load="menu-main.html" style="width:280px;" class="offcanvas offcanvas-start offcanvas-detached rounded-m">
+</div>
+
+<div id="menu-bell" data-menu-load="menu-bell.html" style="height:340px" class="offcanvas offcanvas-top offcanvas-detached rounded-m">
+</div>
+
+<div class="page-content header-clear-medium">
+
+<div class="page-content ">
+<div class="card card-style" style="border-radius:10px;position:relative;height:85px;">
+<div class="card-body text-center">
+<h1>Survey</h1>
+<h5 class=" font-12 color-highlight font-700 text-uppercase">DLS</h5>
+</div>
+
+<!--Button 1-->
+
+<div class="card card-style">
+</div>
+</div>
+<div class="card card-style" style="border-radius: 10px;">
+<div class="content mb-0">
+<h6 class="text-uppercase mt-n2">All Survey</h6>
+<div class="list-group list-custom list-group-m list-group-flush rounded-xs check-visited">
+<a href="NewSurvey.html" class="list-group-item"><i class="has-bg rounded-s bi bg-green-dark bi-pen-fill"></i><div>New Survey</div><i class="bi bi-chevron-right"></i></a>
+<a href="PreSurvey.html" class="list-group-item"><i class="has-bg rounded-s bi bg-red-dark bi-book-fill"></i><div>Previos Survey</div><i class="bi bi-chevron-right"></i></a>
+</div>
+</div>
+
+    
+<script src="scripts/bootstrap.min.js"></script>
+<script src="scripts/custom.js"></script>
+</body>
+</html>

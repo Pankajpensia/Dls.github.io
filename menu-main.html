@@ -1,0 +1,56 @@
+
+<div onclick="document.getElementById('sec_user_name').innerHTML = localStorage.getItem('UserName');">
+
+    
+    <div class="bg-theme mx-3 card-style shadow-m mt-3 mb-3">
+        <div class="d-flex px-2 pb-2 pt-2">
+      <div>
+          <a href="#"><img src="images/avatars/2s.png" width="45" class="rounded-s" alt="img"></a>
+      </div>
+      <div class="ps-2 align-self-center" >
+          <h6 class="ps-1 mb-0 line-height-xs pt-1" id="sec_user_name" >Click hare....</h6>
+      </div>
+      <div class="ms-auto" style="position: absolute;right:15px;" >
+          <a href="#" data-bs-toggle="dropdown" class="icon icon-m ps-3"><i class="bi bi-three-dots-vertical font-18 color-theme"></i></a>
+          <div class="dropdown-menu  bg-transparent border-0 mt-n1 ms-3">
+              <div class="card card-style rounded-m shadow-xl mt-1 me-1">
+                  <div class="list-group list-custom list-group-s list-group-flush rounded-xs px-3 py-1">
+                      <a href="Profile.html" class="color-theme opacity-70 list-group-item py-1"><strong class="font-500 font-12">Your Profile</strong><i class="bi bi-chevron-right"></i></a>
+                      <a href="Login.html" class="color-theme opacity-70 list-group-item py-1"><strong class="font-500 font-12">Log Out</strong><i class="bi bi-chevron-right"></i></a>
+                  </div>
+              </div>
+            </div>
+      </div>
+    </div>
+  </div>
+  <span class="menu-divider">NAVIGATION</span>
+  <div class="menu-list">
+      <div class="card card-style p-3 py-2 mb-0">
+          <a href="index.html" id="nav-homes"><i class="gradient-blue shadow-bg shadow-bg-xs bi bi-house-fill"></i><span>Homepage</span><i class="bi bi-chevron-right"></i></a>
+          <a href="Component.html" id="nav-comps"><i class="gradient-red shadow-bg shadow-bg-xs bi bi-gear-fill"></i><span>Components</span><i class="bi bi-chevron-right"></i></a>
+          <a href="Pages.html" id="nav-pages"><i class="gradient-green shadow-bg shadow-bg-xs bi bi-heart-fill"></i><span>Pages</span><i class="bi bi-chevron-right"></i></a>
+          <a href="Survey.html" id="nav-media"><i class="gradient-yellow shadow-bg shadow-bg-xs bi bi-book"></i><span>Survey</span><i class="bi bi-chevron-right"></i></a>
+          <a href="Contect.html" id="nav-mails"><i class="gradient-magenta shadow-bg shadow-bg-xs bi bi-envelope-fill"></i><span>Contact</span><i class="bi bi-chevron-right"></i></a>
+          <a href="NewSurvey.html" id="nav-homes"><i class="gradient-blue shadow-bg shadow-bg-xs bi-pen-fill"></i><span>New Survey</span><i class="bi bi-chevron-right"></i></a>
+      </div>
+      <br>
+      <div class="card card-style p-3 py-2 mb-0">
+          
+          <a href="#" data-toggle-theme="" data-trigger-switch="switch-1">
+              <i class="gradient-dark shadow-bg shadow-bg-xs bi bi-moon-fill font-13"></i>
+              <span>Dark Mode</span>
+              <div class="form-switch ios-switch switch-green switch-s me-2">
+                  <input type="checkbox" data-toggle-theme="" class="ios-input" id="switch-1">
+                  <label class="custom-control-label" for="switch-1"></label>
+                </div>
+            </a>
+        </div>
+        <br>
+        <div class="card card-style p-3 py-2 mb-0">
+          <a href="Login.html" id="nav-homes"><i class="gradient-blue shadow-bg shadow-bg-xs bi bi-box-arrow-right"></i><span>Login&nbsp;\&nbsp;Logout</span><i class="bi bi-chevron-right"></i></a>
+        </div>
+    </div>
+</div>
+    
+    <script src="scripts/login.js"></script>
+</body>

@@ -1,0 +1,75 @@
+
+<div class="content" onclick="
+let name = localStorage.getItem('UserName')
+
+// Check if the browser supports notifications
+if ('Notification' in window) {
+  // Request permission from the user
+  Notification.requestPermission()
+    .then(function(permission) {
+      if (permission === 'granted') {
+        // Create a new notification
+        var notification = new Notification('Welcome To DLS', {
+          body: name,
+          icon: 'images/avatars/2s.png' // optional icon path
+        });
+
+        NotfiBell.innerHTML = notification.body;
+        // alert(notification.body)
+
+        // Handle click event if the user interacts with the notification
+        notification.onclick = function() {
+          console.log('Notification clicked!');
+        };
+      }
+    })
+    .catch(function(error) {
+      console.error('Error requesting permission:', error);
+    });
+} else {
+  console.log('Notifications not supported in this browser.');
+}
+">
+    <div class="d-flex">
+    <div>
+    <h1 class="mb-0 font-20">Notifications</h1>
+    </div>
+    <div class="ms-auto me-n2">
+    <a href="#" data-bs-dismiss="offcanvas" class="icon icon-xs mt-n1"><i class="bi bi-x-circle-fill color-red-dark font-18"></i></a>
+    </div>
+    </div>
+    <div class="divider mt-2 mb-3"></div>
+    <a href="#">
+    <div class="d-flex">
+    <div class="align-self-center me-3">
+    <span class="icon icon-xxl gradient-green shadow-bg shadow-bg-s rounded-m color-white"><i class="bi bi-phone-vibrate font-30"></i></span>
+    </div>
+    <div class="align-self-center">
+    <h5 class="font-15 mb-0 ps-1 pt-1">Welcome To DLS</h5>
+    <p class="ps-1 pb-1 mb-0 font-12 line-height-s opacity-80">
+    Deep Land Solution
+    </p>
+    </div>
+    </div>
+    </a>
+    <div class="mb-3"></div>
+   <a href="#">
+    <div class="d-flex">
+    <div class="align-self-center me-3">
+    <span class="icon icon-xxl gradient-blue shadow-bg shadow-bg-s rounded-m color-white"><i class="bi bi-phone-vibrate font-30"></i></span>
+    </div>
+    <div class="align-self-center">
+    <h5 class="font-15 mb-0 ps-1 pt-1">Login Successfully</h5>
+    <p id="NotfiBell" class="ps-1 pb-1 mb-0 font-12 line-height-s opacity-80">
+    Your Account has been login Successfully 
+    </p>
+    </div>
+    </div>
+    </a>
+   
+   
+    <div class="mb-3"></div>
+ 
+
+    </div>
+    
