@@ -24,8 +24,6 @@ const analytics = getAnalytics(app);
 const auth = getAuth();
 console.log(app);
 
-
-
 //----- New Registration code start	  
 document.getElementById("register").addEventListener("click", function() {
 var email =  document.getElementById("email").value + '@dls.com';
