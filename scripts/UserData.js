@@ -40,14 +40,15 @@ let register = document.getElementById("register");
            Password: password
          })
            .then(() => {
-            console.log('Data Send Successfully')
+              console.log("Data Send Successfuly");
               name = document.getElementById("name").value = "";
               email = document.getElementById("email").value = "";
               password = document.getElementById("password").value = "";
 
            })
            .catch((error) => {
-             console.error("Error inserting data: ", error);
+                alert(error);
+                console.error("Error inserting data: ", error);
            });
        };
         
