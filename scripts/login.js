@@ -37,7 +37,7 @@ signInWithEmailAndPassword(auth, email, password)
   localStorage.setItem("UserName", email);
    
 setTimeout(()=>{
-   window.open("Home.html", "_self");  
+   window.open("Home.html", "_blank");  
 
 }, 1000)	 
    
