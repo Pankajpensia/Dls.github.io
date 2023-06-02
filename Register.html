@@ -62,7 +62,7 @@
 <script>
 
 let password = document.getElementById("password");
-
+let email = document.getElementById("email");
 let btn = document.getElementById("register");
 
 function CheckPass(){
@@ -79,8 +79,23 @@ function CheckPass(){
   }
 }
 
-password.addEventListener('input', CheckPass)
+function CheckMob(){
 
+  if(email.value.length < 10){
+     btn.innerHTML = "Minimum 10 Character Mobile";
+     btn.classList.remove('gradient-green');
+     btn.classList.add('gradient-red');
+  }
+  
+  else{
+    btn.innerHTML = "Sign In";
+    btn.classList.remove('gradient-red');
+     btn.classList.add('gradient-green');
+  }
+}
+
+password.addEventListener('input', CheckPass);
+email.addEventListener('input', CheckMob);
 </script>
 
 </body>
